@@ -1,0 +1,13 @@
+.btn:link,
+.btn:visited {
+  background-color: $accent-color;
+  display: inline-block;
+  padding: 2rem 4rem;
+  border-radius: 2rem;
+}
+
+.btn:hover,
+.btn:active {
+  background-color: #fff;
+  background-image: linear-gradient(to right, $gradient);
+}

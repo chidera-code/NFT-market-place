@@ -1,0 +1,51 @@
+.navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 2rem;
+  width: 94vw;
+  margin: 0 auto;
+  &__logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &--img {
+      img {
+        height: 3.2rem;
+        width: 3.2rem;
+      }
+    }
+    &--text {
+      font-size: 2rem;
+      padding-left: 1rem;
+    }
+  }
+
+  &__nav {
+    &--items {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    &--item a {
+      padding-right: 1rem;
+      font-size: 1.6rem;
+      display: inline-block;
+    }
+    &--item a:not(:last-child) {
+      padding-right: 0;
+    }
+    &--item a :hover,
+    &--item a :active {
+      border-radius: 2rem;
+
+      border: 2px solid #a259ff;
+    }
+
+    &--action {
+      font-size: 1.6rem;
+    }
+  }
+}

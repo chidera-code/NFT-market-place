@@ -1,0 +1,40 @@
+.container {
+  width: 90vw;
+  margin: 0 auto;
+}
+
+a {
+  color: $color-primary;
+  text-transform: capitalize;
+  letter-spacing: 2px;
+  font-size: 1.6rem;
+}
+
+.grid-3--cols {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.heading-secondary {
+  font-size: 4rem;
+  text-transform: capitalize;
+  display: flex;
+  align-items: start;
+}
+
+.description {
+  font-size: 2.4rem;
+  text-transform: capitalize;
+  letter-spacing: 2px;
+  padding-top: 2rem;
+}
+
+section {
+  padding-top: 10rem;
+}

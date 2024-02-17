@@ -1,0 +1,78 @@
+.header {
+  &__main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 8rem 0;
+    gap: 5rem;
+
+    .text-box {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      // padding-right: 3rem;
+      // w100%
+
+      .heading-primary {
+        font-size: 7rem;
+        font-weight: 400;
+        text-transform: capitalize;
+        letter-spacing: 3px;
+      }
+
+      .header-description {
+        font-size: 1.8rem;
+        // padding-right: 10rem;
+      }
+
+      a {
+        align-self: flex-start;
+      }
+
+      .rating-description {
+        font-size: 3rem;
+
+        // text-align: center;
+
+        span {
+          display: block;
+          font-size: 2.6rem;
+          text-transform: capitalize;
+        }
+      }
+    }
+  }
+
+  .composition {
+    background-color: #333;
+    border-radius: 3rem;
+
+    width: 100%;
+    img {
+      width: 100%;
+    }
+    .compo-profile {
+      padding: 0 3rem 1rem;
+      padding-top: 0;
+      p {
+        font-size: 2.4rem;
+        padding-top: 1rem;
+      }
+      .profile {
+        display: flex;
+        align-items: center;
+        padding-top: 1rem;
+        img {
+          width: 3rem;
+          height: 3rem;
+          border-radius: 50%;
+        }
+
+        span {
+          font-size: 1.6rem;
+          padding-left: 1rem;
+          text-transform: capitalize;
+        }
+      }
+    }
+  }
+}
