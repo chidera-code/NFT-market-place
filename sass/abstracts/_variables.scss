@@ -1,8 +1,10 @@
 $color-primary: #ffffff;
 
-$primary-fonts: sans serif;
-
-$color-background: #222;
+$primary-fonts: "Work Sans", sans-serif;
+$color-background: #2b2b2b;
 $accent-color: #8b4cdc;
+$seconday-background-color: #3b3b3b;
 
-$gradient: rgb(255, 255, 255), #6d04f7;
+$gradient: 190deg, transparent 0%, #3b3b3b 50%, #8b4cdc 50%, #8b4cdc;
+
+$secondary-font: "Space Mono", monospace;
