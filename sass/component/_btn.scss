@@ -1,13 +1,27 @@
 .btn:link,
 .btn:visited {
+  padding-left: 1rem;
   background-color: $accent-color;
-  display: inline-block;
-  padding: 2rem 4rem;
   border-radius: 2rem;
+  padding: 2rem 4rem;
+  display: inline-block;
+
+  transition: all 300ms ease;
+}
+
+.btn-icon {
+  display: inline-block;
 }
 
 .btn:hover,
 .btn:active {
-  background-color: #fff;
+  // background-color: $color-primary;
+  transform: scale(1.1);
   background-image: linear-gradient($gradient);
+}
+
+.trans-btn {
+  justify-content: center;
+  border: 2px solid #8b4cdc;
+  background-color: transparent !important;
 }

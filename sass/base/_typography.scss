@@ -40,3 +40,22 @@ html {
   letter-spacing: 2px;
   padding: 0 0 6rem;
 }
+.creator-name {
+  font-size: 2rem;
+  font-weight: 400;
+  font-family: $primary-fonts;
+  line-height: 180%;
+}
+
+.sales,
+.no {
+  font-size: 1.6rem;
+  line-height: 170%;
+  font-weight: 400;
+  text-transform: capitalize;
+  color: $grey-color;
+
+  span {
+    color: $color-primary;
+  }
+}
