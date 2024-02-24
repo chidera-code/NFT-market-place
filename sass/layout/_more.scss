@@ -1,0 +1,20 @@
+.section__more {
+  .text--box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    // padding-bottom: 6rem;
+  }
+
+  .more__cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    &--card {
+      figure {
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
