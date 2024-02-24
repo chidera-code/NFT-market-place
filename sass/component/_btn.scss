@@ -4,28 +4,34 @@
   background-color: $accent-color;
   border-radius: 2rem;
   padding: 2rem 4rem;
-  display: inline-block;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   transition: all 300ms ease;
   overflow: hidden;
 }
 
 .btn-icon {
-  display: inline-block;
-}
-.btn-box {
+  padding-right: 1rem;
 }
 
 .btn:hover,
 .btn:active {
+  overflow: hidden;
   // background-color: $color-primary;
   transform: scale(1.1);
   background-image: linear-gradient($gradient);
+
+  .btn-icon:hover {
+    color: $color-primary;
+  }
 }
 
 .trans-btn {
-  // justify-content: center;
-  // border: 2px solid #8b4cdc;
+  justify-content: center;
+  border: 2px solid #8b4cdc;
   background-color: transparent !important;
 }
 .btn-box {
