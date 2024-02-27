@@ -9,6 +9,7 @@
   .more__cards {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
 
     @include respond(tab-land) {
       // 1rem = 9px, (9/16) * 100
