@@ -16,10 +16,16 @@
       grid-template-columns: repeat(3, 1fr);
       overflow: scroll;
     }
+    @include respond(big-phone) {
+      // 1rem = 9px, (9/16) * 100
+      grid-template-columns: repeat(3, 100%);
+      overflow: scroll;
+    }
 
     &--card {
       transition: all 0.7s ease;
       border-radius: 2rem;
+
       figure {
         img {
           width: 100%;
