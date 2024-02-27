@@ -1,5 +1,20 @@
 html {
   font-size: 62.5%;
+
+  @include respond(tab-land) {
+    // 1rem = 9px, (9/16) * 100
+    font-size: 56.25%;
+  }
+
+  @include respond(tab-port) {
+    // 1rem = 8px, (8/16) * 100
+    font-size: 50%;
+  }
+
+  @include respond(big-desktop) {
+    // 1rem = 12px, (12/16) * 100
+    font-size: 75%;
+  }
 }
 
 .heading-primary {
@@ -9,30 +24,141 @@ html {
   letter-spacing: 18.8%;
   font-family: $primary-fonts;
   // padding: 2rem;
+
+  @include respond(big-phone) {
+    // 1rem = 9px, (9/16) * 100
+    font-size: 7rem;
+  }
+  @include respond(tab-land) {
+    // 1rem = 9px, (9/16) * 100
+    font-size: 6rem;
+  }
+
+  @include respond(tab-port) {
+    // 1rem = 8px, (8/16) * 100
+    font-size: 5.2rem;
+  }
+
+  @include respond(big-desktop) {
+    // 1rem = 12px, (12/16) * 100
+    font-size: 7.4rem;
+  }
 }
 
 .header-description {
   font-size: 2.2rem;
   line-height: 175%;
   padding-bottom: 3rem;
+  @include respond(tab-land) {
+    // 1rem = 9px, (9/16) * 100
+    font-size: 2rem;
+    line-height: 130%;
+  }
+
+  @include respond(tab-port) {
+    // 1rem = 8px, (8/16) * 100
+    font-size: 1.6rem;
+  }
+
+  @include respond(big-desktop) {
+    // 1rem = 12px, (12/16) * 100
+    font-size: 2.4rem;
+  }
+  @include respond(big-phone) {
+    // 1rem = 9px, (9/16) * 100
+    font-size: 3rem;
+  }
 }
 .rating-description {
   font-size: 3rem;
+
+  @include respond(tab-land) {
+    // 1rem = 9px, (9/16) * 100
+    font-size: 3rem;
+  }
+
+  @include respond(tab-land) {
+    // 1rem = 9px, (9/16) * 100
+    font-size: 2rem;
+  }
+
+  @include respond(tab-port) {
+    // 1rem = 8px, (8/16) * 100
+    font-size: 1.8rem;
+  }
+
+  @include respond(big-desktop) {
+    // 1rem = 12px, (12/16) * 100
+    font-size: 3.6rem;
+  }
 }
 .info--text {
   font-size: 2.2rem;
   font-weight: 600;
   font-family: $primary-fonts;
+
+  @include respond(tab-land) {
+    // 1rem = 9px, (9/16) * 100
+    font-size: 2rem;
+    font-weight: 400;
+  }
+
+  @include respond(tab-port) {
+    // 1rem = 8px, (8/16) * 100
+    font-size: 1.8rem;
+  }
+
+  @include respond(big-desktop) {
+    // 1rem = 12px, (12/16) * 100
+    font-size: 2.8rem;
+  }
 }
-.profile--name {
+.profile--name,
+.artist-name {
   font-size: 1.6rem;
   padding-left: 1.2rem;
   line-height: 175%;
+  @include respond(big-phone) {
+    font-size: 1.8rem;
+    padding-left: 1.3rem;
+    line-height: 175%;
+  }
+  @include respond(tab-land) {
+    // 1rem = 9px, (9/16) * 100
+    font-size: 1.4rem;
+    padding-left: 1rem;
+    line-height: 140%;
+  }
+
+  @include respond(tab-port) {
+    // 1rem = 8px, (8/16) * 100
+    font-size: 1.3rem;
+  }
+
+  @include respond(big-desktop) {
+    // 1rem = 12px, (12/16) * 100
+    font-size: 2.4rem;
+  }
 }
 
 .heading-secondary {
   font-size: 4rem;
   padding-bottom: 1rem;
+
+  @include respond(tab-land) {
+    // 1rem = 9px, (9/16) * 100
+    font-size: 3.6rem;
+  }
+
+  @include respond(tab-port) {
+    // 1rem = 8px, (8/16) * 100
+    font-size: 3rem;
+  }
+
+  @include respond(big-desktop) {
+    // 1rem = 12px, (12/16) * 100
+    font-size: 5rem;
+  }
 }
 
 .description {
@@ -40,6 +166,24 @@ html {
   text-transform: capitalize;
   letter-spacing: 2px;
   padding: 1rem 0 6rem !important;
+  @include respond(tab-land) {
+    // 1rem = 9px, (9/16) * 100
+    font-size: 2rem;
+  }
+
+  @include respond(tab-port) {
+    // 1rem = 8px, (8/16) * 100
+    font-size: 1.8rem;
+  }
+
+  @include respond(big-desktop) {
+    // 1rem = 12px, (12/16) * 100
+    font-size: 3rem;
+  }
+  @include respond(big-phone) {
+    // 1rem = 12px, (12/16) * 100
+    font-size: 2rem;
+  }
   // padding: 0 0 6rem;
 }
 .creator-name {
@@ -47,6 +191,22 @@ html {
   font-weight: 400;
   font-family: $primary-fonts;
   line-height: 180%;
+
+  @include respond(tab-land) {
+    // 1rem = 9px, (9/16) * 100
+    font-size: 2rem;
+    line-height: 140%;
+  }
+
+  @include respond(tab-port) {
+    // 1rem = 8px, (8/16) * 100
+    font-size: 1.8rem;
+  }
+
+  @include respond(big-desktop) {
+    // 1rem = 12px, (12/16) * 100
+    font-size: 2.6rem;
+  }
 }
 
 .sales,
@@ -60,6 +220,22 @@ html {
   span {
     color: $color-primary;
   }
+
+  @include respond(tab-land) {
+    // 1rem = 9px, (9/16) * 100
+    font-size: 1.4rem;
+    line-height: 140%;
+  }
+
+  @include respond(tab-port) {
+    // 1rem = 8px, (8/16) * 100
+    font-size: 1.3rem;
+  }
+
+  @include respond(big-desktop) {
+    // 1rem = 12px, (12/16) * 100
+    font-size: 2.2rem;
+  }
 }
 
 .des--cat {
@@ -67,4 +243,86 @@ html {
   font-weight: 400;
   line-height: 180%;
   text-transform: capitalize;
+  @include respond(tab-land) {
+    // 1rem = 9px, (9/16) * 100
+    font-size: 1.6rem;
+    line-height: 140%;
+  }
+
+  @include respond(tab-port) {
+    // 1rem = 8px, (8/16) * 100
+    font-size: 1.4rem;
+  }
+
+  @include respond(big-desktop) {
+    // 1rem = 12px, (12/16) * 100
+    font-size: 2.8rem;
+  }
+}
+.name {
+  font-size: 2.4rem;
+  font-weight: 300;
+
+  @include respond(tab-land) {
+    // 1rem = 9px, (9/16) * 100
+    font-size: 1.8rem;
+    line-height: 140%;
+  }
+
+  @include respond(tab-port) {
+    // 1rem = 8px, (8/16) * 100
+    font-size: 1.5rem;
+  }
+
+  @include respond(big-desktop) {
+    // 1rem = 12px, (12/16) * 100
+    font-size: 3rem;
+  }
+  // padding-bottom: 1rem;
+}
+.fade {
+  font-size: 1.6rem;
+  line-height: 170%;
+  font-weight: 400;
+  text-transform: capitalize;
+  color: $grey-color;
+
+  @include respond(tab-land) {
+    // 1rem = 9px, (9/16) * 100
+    font-size: 1.4rem;
+    line-height: 140%;
+  }
+
+  @include respond(tab-port) {
+    // 1rem = 8px, (8/16) * 100
+    font-size: 1.3rem;
+  }
+
+  @include respond(big-desktop) {
+    // 1rem = 12px, (12/16) * 100
+    font-size: 2.2rem;
+  }
+}
+.pri {
+  font-size: 1.6rem;
+  line-height: 170%;
+  font-weight: 400;
+  text-transform: capitalize;
+  // color: $grey-color;
+
+  @include respond(tab-land) {
+    // 1rem = 9px, (9/16) * 100
+    font-size: 1.4rem;
+    line-height: 140%;
+  }
+
+  @include respond(tab-port) {
+    // 1rem = 8px, (8/16) * 100
+    font-size: 1.3rem;
+  }
+
+  @include respond(big-desktop) {
+    // 1rem = 12px, (12/16) * 100
+    font-size: 2.2rem;
+  }
 }

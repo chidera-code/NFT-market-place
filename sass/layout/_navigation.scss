@@ -21,27 +21,33 @@
   }
 
   &__nav {
+    @include respond(tab-land) {
+      display: none;
+    }
     &--items {
       display: flex;
       align-items: center;
       justify-content: center;
-      gap: 5rem;
+      // gap: 5rem;
     }
 
-    &--item a {
+    &--item {
+      padding-right: 3rem;
       // padding: 0 2rem 0 2rem;
       font-size: 1.6rem;
       display: inline-block;
     }
-    &--item a:not(:last-child) {
-      padding-right: 0;
-    }
-    &--item a :hover,
-    &--item a :active {
-      border-radius: 2rem;
-      background-color: red;
 
-      border: 2px solid $accent-color;
+    &--item a:link,
+    &--item a:visited {
+      padding: 2rem 2rem;
+      transition: all 500ms ease;
+      box-sizing: border-box;
+    }
+    &--item a:hover,
+    &--item a:active {
+      // border-radius: 2rem;
+      box-shadow: 0 0 0 2px $accent-color;
     }
 
     &--action {

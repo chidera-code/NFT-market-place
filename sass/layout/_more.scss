@@ -9,11 +9,49 @@
   .more__cards {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+
+    @include respond(tab-land) {
+      // 1rem = 9px, (9/16) * 100
+      grid-template-columns: repeat(3, 1fr);
+      overflow: scroll;
+    }
+
     &--card {
+      transition: all 0.7s ease;
+      border-radius: 2rem;
       figure {
         img {
           width: 100%;
         }
+      }
+    }
+    &--card:hover {
+      box-shadow: 0.1rem 0.2rem 3rem 0.05rem $color-shadow;
+      transform: translateY(-5px);
+    }
+
+    &--textbox {
+      padding: 2rem 3rem;
+      background-color: $seconday-background-color;
+      overflow: hidden;
+      .name {
+        padding-bottom: 1rem;
+      }
+      .artist--info {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        padding-bottom: 1rem;
+        img {
+          width: 3rem;
+          height: 3rem;
+          border-radius: 50%;
+        }
+      }
+      .additional--info {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
       }
     }
   }
