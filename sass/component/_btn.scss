@@ -56,3 +56,8 @@
   justify-content: center;
   border: 2px solid #8b4cdc;
 }
+.btn--white {
+  background-color: $color-primary !important;
+  color: #000;
+  align-self: flex-start;
+}

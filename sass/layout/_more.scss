@@ -16,6 +16,11 @@
       grid-template-columns: repeat(3, 1fr);
       overflow: scroll;
     }
+    @include respond(tab-port) {
+      // 1rem = 9px, (9/16) * 100
+      grid-template-columns: repeat(3, 100%);
+      overflow: scroll;
+    }
     @include respond(big-phone) {
       // 1rem = 9px, (9/16) * 100
       grid-template-columns: repeat(3, 100%);
@@ -24,7 +29,8 @@
 
     &--card {
       transition: all 0.7s ease;
-      border-radius: 2rem;
+      border-radius: 3rem;
+      overflow: hidden;
 
       figure {
         img {
@@ -35,6 +41,7 @@
     &--card:hover {
       box-shadow: 0.1rem 0.2rem 3rem 0.05rem $color-shadow;
       transform: translateY(-5px);
+      // border-radius: 3rem;
     }
 
     &--textbox {
