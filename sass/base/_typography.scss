@@ -184,6 +184,10 @@ html {
     // 1rem = 12px, (12/16) * 100
     font-size: 2rem;
   }
+  @include respond(sm-phone) {
+    // 1rem = 12px, (12/16) * 100
+    padding: 1rem 0 2rem 0 !important;
+  }
   // padding: 0 0 6rem;
 }
 .creator-name {

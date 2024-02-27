@@ -7,11 +7,17 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 3rem;
-
+  @include respond(tab-port) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @include respond(big-phone) {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 5rem;
+  }
   &__card {
     background-color: $seconday-background-color;
     overflow: hidden;
-    border-radius: 3rem;
+    border-radius: 6rem;
     // z-index: -2;
     figure {
       // z-index: -1;
@@ -46,5 +52,11 @@
   }
   .card-p {
     padding: 2rem 3rem;
+    @include respond(big-phone) {
+      padding: 8rem 5rem;
+      p {
+        font-size: 5rem;
+      }
+    }
   }
 }

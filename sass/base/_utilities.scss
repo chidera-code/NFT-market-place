@@ -38,3 +38,22 @@ a {
 section {
   padding: 8rem 0;
 }
+.text--box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  @include respond(sm-phone) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 3rem;
+  }
+
+  .btn {
+    @include respond(sm-phone) {
+      align-self: flex-start;
+    }
+  }
+}

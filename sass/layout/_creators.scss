@@ -1,14 +1,18 @@
 .section__creator {
-  .text--box {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-
   .creator__gallery {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 3rem;
+
+    @include respond(tab-port) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+    @include respond(big-phone) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @include respond(sm-phone) {
+      grid-template-columns: 1fr;
+    }
 
     &--card {
       display: flex;
@@ -44,12 +48,19 @@
     &--img {
       padding: 2rem 0;
       // box-sizing: 00 0 6rem 1rem blue;
+
       img {
         width: 12rem;
         height: 12rem;
         border-radius: 50%;
         // background-color: red;
         // display: block;
+
+        @include respond(sm-phone) {
+          width: 20rem;
+          height: 20rem;
+          border-radius: 50%;
+        }
       }
     }
     .sales {

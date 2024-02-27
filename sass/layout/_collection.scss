@@ -3,6 +3,11 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
 
+    @include respond(big-phone) {
+      grid-template-columns: 1fr;
+      gap: 6rem;
+    }
+
     img {
       border-radius: 2.8rem;
     }
