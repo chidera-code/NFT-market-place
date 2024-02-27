@@ -53,7 +53,7 @@
   .card-p {
     padding: 2rem 3rem;
     @include respond(big-phone) {
-      padding: 8rem 5rem;
+      padding: 4rem 5rem;
       p {
         font-size: 5rem;
       }
