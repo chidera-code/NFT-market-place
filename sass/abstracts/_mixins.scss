@@ -8,6 +8,7 @@
 @mixin padCenter {
   padding-right: 6vw;
   padding-left: 6vw;
+  padding-bottom: 6vw;
 
   @include respond(tab-port) {
     padding-right: 3vw;
