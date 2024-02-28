@@ -1,0 +1,61 @@
+.how__cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+
+  @include respond(tab-land) {
+    // 1rem = 9px, (9/16) * 100
+    grid-template-columns: repeat(3, 1fr);
+    overflow: scroll;
+  }
+  @include respond(tab-port) {
+    // 1rem = 9px, (9/16) * 100
+    grid-template-columns: repeat(3, 100%);
+    overflow: scroll;
+  }
+  @include respond(big-phone) {
+    // 1rem = 9px, (9/16) * 100
+    grid-template-columns: repeat(3, 100%);
+    overflow: scroll;
+  }
+
+  &--card {
+    transition: all 0.7s ease;
+    border-radius: 3rem;
+    overflow: hidden;
+    background-color: $seconday-background-color;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 3rem 3rem;
+
+    figure {
+      height: 21rem;
+      width: 21rem;
+      border-radius: 50%;
+      padding-bottom: 2rem;
+      img {
+        width: 100%;
+      }
+    }
+    .card--details {
+      p {
+        text-align: center;
+        // background-color: red;
+        padding-top: 1rem;
+
+        :last-child {
+          padding-top: 0;
+          font-size: 1.6rem;
+          font-weight: 400;
+        }
+      }
+    }
+  }
+  &--card:hover {
+    box-shadow: 0.1rem 0.2rem 3rem 0.05rem $color-shadow;
+    transform: translateY(-5px);
+    // border-radius: 3rem;
+  }
+}

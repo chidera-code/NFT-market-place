@@ -112,6 +112,10 @@ html {
     // 1rem = 12px, (12/16) * 100
     font-size: 2.8rem;
   }
+  @include respond(big-phone) {
+    // 1rem = 12px, (12/16) * 100
+    font-size: 2rem;
+  }
 }
 .profile--name,
 .artist-name {
@@ -136,6 +140,10 @@ html {
   }
 
   @include respond(big-desktop) {
+    // 1rem = 12px, (12/16) * 100
+    font-size: 2.4rem;
+  }
+  @include respond(big-phone) {
     // 1rem = 12px, (12/16) * 100
     font-size: 2.4rem;
   }
@@ -335,4 +343,10 @@ html {
     // 1rem = 12px, (12/16) * 100
     font-size: 2.2rem;
   }
+}
+
+.subscribe-head {
+  font-size: 3.8rem;
+  font-weight: 600;
+  line-height: 235%;
 }
