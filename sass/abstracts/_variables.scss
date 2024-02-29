@@ -12,8 +12,7 @@ $secondary-font: "Space Mono", monospace;
 
 $grey-color: #858584;
 $blur-color: rgba(255, 255, 255, 0.493);
-$linear-gradient: linear-gradient(
-  180deg,
-  rgba(162, 89, 255, 0) 0%,
-  #a259ff 100%
-);
+$linear-gradient: linear-gradient(180deg,
+    rgba(162, 89, 255, 0) 0%,
+    hsl(266, 100%, 67%) 100%);
+$black: #000;

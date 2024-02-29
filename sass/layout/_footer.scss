@@ -1,0 +1,81 @@
+.footer {
+  background-color: $seconday-background-color;
+  padding: 4rem 10rem;
+
+  // width: 100vw;
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-bottom: 3rem;
+    border-bottom: 1px solid $grey-color;
+
+    // justify-content: center;
+    .market-info {
+      padding-right: 5.4rem;
+
+      .fade:not(:last-child) {
+        padding-bottom: 2rem;
+      }
+
+      .sm-padd {
+        padding-bottom: 1rem !important;
+        // background-color: red;
+      }
+
+      .links {
+        display: flex;
+        // justify-content: center;
+        align-items: center;
+        gap: 1rem;
+
+        a {
+          height: 3.2rem;
+          width: 3.2rem;
+
+          img {
+            width: 100%;
+          }
+        }
+      }
+    }
+
+    .explore {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      // align-items: flex-start;
+      // justify-content: flex-start;
+
+    }
+
+    .join {
+      .form {
+
+        .input {
+          padding: 16px, 0px, 16px, 20px;
+          display: inline-block;
+
+          .input::placeholder {
+            font-family: $primary-fonts;
+            color: $black;
+          }
+        }
+      }
+    }
+  }
+
+
+  &__logo {
+    display: flex;
+    // justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
+
+
+  .small {
+    padding-top: 2rem;
+    display: inline-block;
+  }
+}

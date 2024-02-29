@@ -27,6 +27,9 @@ body {
     border: 1px solid $color-primary;
   }
 }
+html{
+  scroll-behavior: smooth;
+}
 li {
   list-style: none;
 }

@@ -33,8 +33,13 @@
       overflow: hidden;
 
       figure {
+        // width: 33rem;
+
+        height: 30.9rem;
         img {
           width: 100%;
+          height: 100%;
+          display: block;
         }
       }
     }

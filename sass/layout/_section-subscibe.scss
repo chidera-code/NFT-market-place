@@ -3,19 +3,21 @@
     background-color: $seconday-background-color;
     border-radius: 2rem;
     display: flex;
-    // justify-content: center;
-    align-items: center;
-    padding: 6rem;
+
+    // align-items: center;
+    padding: 8rem 6rem;
     &--img {
       width: 45.5rem;
-      // flex: 1;
+
+      flex: 1;
       img {
         width: 100%;
       }
     }
 
     &--text-box {
-      // flex: 1;
+      padding-left: 8rem;
+      flex: 1;
       h3 {
         text-transform: capitalize;
       }
