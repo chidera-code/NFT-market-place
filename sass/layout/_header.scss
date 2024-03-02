@@ -16,21 +16,20 @@
     .text-box {
       display: flex;
       flex-direction: column;
-      // gap: 2rem;
       padding-right: 3rem;
+
       @include respond(tab-land) {
         padding-right: 2rem;
       }
-      // w100%
 
       a {
-        align-self: flex-start;
+        display: inline-flex;
       }
 
-      // text-align: center;
       .ratings {
         padding-top: 3rem;
       }
+
       span {
         display: block;
         font-size: 2.6rem;
@@ -43,38 +42,36 @@
 .composition {
   background-color: $seconday-background-color;
   border-radius: 3rem;
-
   width: 100%;
   display: inline-block;
+  overflow: hidden;
+
   img {
     width: 100%;
+    object-fit: cover;
+
+    @include respond(tab-port) {
+      height: min(45rem, 45vh);
+    }
   }
+
   .compo-profile {
-    padding: 0 3rem 1rem;
-    padding-top: 0;
-    @include respond(tab-land) {
-      padding: 0 3rem 0.8rem;
-    }
-    @include respond(big-phone) {
-      padding: 0 3rem 1.5rem;
-    }
+    padding: 2.2rem 2rem;
+
     p {
       font-size: 2.4rem;
-      padding-top: 1rem;
-      @include respond(big-phone) {
-        padding: 0 3rem 2rem;
-      }
+      text-transform: capitalize;
     }
+
     .profile {
       display: flex;
       align-items: center;
       padding-top: 1rem;
-      @include respond(big-phone) {
-        padding: 0 3rem 1.8rem;
-      }
+
       img {
         width: 3rem;
         height: 3rem;
+        object-fit: cover;
         border-radius: 50%;
       }
 

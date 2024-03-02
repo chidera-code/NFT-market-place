@@ -1,18 +1,20 @@
 $color-primary: #ffffff;
 
-$primary-fonts: "Work Sans", sans-serif;
+$primary-fonts: 'Work Sans', sans-serif;
 $color-background: #2b2b2b;
 $accent-color: #8a4cdc5e;
 $color-shadow: rgba(138, 76, 220, 0.1);
 $seconday-background-color: #3b3b3b;
 
-$gradient: 190deg, transparent 0%, #3b3b3b 50%, #8b4cdc 50%, #8b4cdc;
+$gradient: 190deg, transparent 0%, transparent 50%, #8b4cdc 50%, #8b4cdc;
 
-$secondary-font: "Space Mono", monospace;
+$secondary-font: 'Space Mono', monospace;
 
 $grey-color: #858584;
 $blur-color: rgba(255, 255, 255, 0.05);
-$linear-gradient: linear-gradient(180deg,
-        rgba(162, 89, 255, 0) 0%,
-        hsl(266, 100%, 67%) 100%);
+$linear-gradient: linear-gradient(
+  180deg,
+  rgba(162, 89, 255, 0) 0%,
+  hsl(266, 100%, 67%) 100%
+);
 $black: #000;

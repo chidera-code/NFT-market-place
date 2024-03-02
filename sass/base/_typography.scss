@@ -19,10 +19,11 @@ html {
 
 .heading-primary {
   font-size: 6.7rem;
-  font-weight: 600;
+font-weight: 600;
   text-transform: capitalize;
   letter-spacing: 18.8%;
   font-family: $primary-fonts;
+  margin-bottom: 2rem;
   // padding: 2rem;
 
   @include respond(big-phone) {
@@ -217,7 +218,7 @@ html {
   text-transform: capitalize;
   letter-spacing: 2px;
   font-weight: lighter;
-  padding: 1rem 0 6rem !important;
+  padding: 1rem 0 6rem;
 
   @include respond(tab-land) {
     // 1rem = 9px, (9/16) * 100

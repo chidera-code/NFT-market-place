@@ -6,10 +6,18 @@
 
     @include respond(tab-port) {
       grid-template-columns: repeat(3, 1fr);
+      gap: 2rem;
     }
+
     @include respond(big-phone) {
       grid-template-columns: repeat(2, 1fr);
     }
+
+    @include respond(phone) {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.5rem;
+    }
+
     @include respond(sm-phone) {
       grid-template-columns: 1fr;
     }
