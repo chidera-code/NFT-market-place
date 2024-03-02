@@ -5,6 +5,15 @@
     width: 100vw;
     height: 90vh;
     position: relative;
+
+    @include respond (big-phone) {
+      height: 70vh;
+    }
+
+    @include respond (sm-phone) {
+      height: 50vh;
+    }
+
     img {
       width: 100%;
       height: 100%;
@@ -12,6 +21,7 @@
       object-position: center;
       // position: relative;
     }
+
     .overlay {
       position: absolute;
       height: 100%;
@@ -21,8 +31,10 @@
       left: 0;
       z-index: 1;
     }
+
     // position: relative;
   }
+
   .content {
     // background-image: repeating-radial-gradient(transparent, $accent-color);
 
@@ -35,6 +47,15 @@
     justify-content: space-between;
     // background-color: red;
     width: 100%;
+
+    @include respond (big-phone) {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
 
     .content-text {
       display: flex;
@@ -51,6 +72,7 @@
         background-color: $seconday-background-color;
         align-self: flex-start;
         border-radius: 2rem;
+
         img {
           width: 2.4rem;
           height: 2.4rem;
@@ -58,11 +80,20 @@
       }
     }
   }
+
   .composition {
     width: 29.5rem;
     height: 14.7rem;
     border-radius: 2rem;
     align-self: flex-end;
+
+    @include respond (big-phone) {
+      align-self: center;
+      padding: 3rem 0 0 2rem;
+      background-color: transparent;
+    }
+
+
     img {
       width: 100%;
     }

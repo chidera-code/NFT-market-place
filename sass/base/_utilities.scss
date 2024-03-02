@@ -43,9 +43,11 @@ section {
   margin: 8rem 0;
   padding: 0;
 }
+
 .sm-pad {
   padding: 4rem 0;
 }
+
 .text--box {
   display: flex;
   align-items: center;
@@ -64,4 +66,18 @@ section {
       align-self: flex-start;
     }
   }
+}
+
+.overlay .cad {
+  height: 100%;
+  width: 100%;
+  // background-image: $linear-gradient;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background-color: $blur-color;
+  filter: blur(5px);
+  background-color: red;
+  position: absolute;
+
 }

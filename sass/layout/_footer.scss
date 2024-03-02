@@ -2,6 +2,18 @@
   background-color: $seconday-background-color;
   padding: 4rem 10rem;
 
+  @include respond (tab-port) {
+    padding: 3rem 8rem;
+  }
+
+  @include respond (big-phone) {
+    padding: 2rem 5rem;
+  }
+
+  @include respond (sm) {
+    padding: 2rem 4rem;
+  }
+
   // width: 100vw;
   &__content {
     display: flex;
@@ -9,6 +21,14 @@
     align-items: flex-start;
     padding-bottom: 3rem;
     border-bottom: 1px solid $grey-color;
+
+    @include respond (big-phone) {
+      flex-direction: column;
+      justify-content: center;
+      // align-items: center;
+      padding: 3rem;
+      gap: 3rem;
+    }
 
     // justify-content: center;
     .market-info {

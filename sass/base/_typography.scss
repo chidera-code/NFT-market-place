@@ -183,6 +183,33 @@ html {
 
 .heading-tertiary {
   font-size: 5.1rem;
+
+  @include respond(tab-land) {
+    // 1rem = 9px, (9/16) * 100
+    font-size: 5rem;
+  }
+
+  @include respond(tab-port) {
+    // 1rem = 8px, (8/16) * 100
+    font-size: 4dvb;
+  }
+
+  @include respond(big-desktop) {
+    // 1rem = 12px, (12/16) * 100
+    font-size: 6rem;
+  }
+
+  @include respond(big-phone) {
+    // 1rem = 12px, (12/16) * 100
+    font-size: 4rem;
+  }
+
+  @include respond(sm-phone) {
+    // 1rem = 12px, (12/16) * 100
+    font-size:
+      3rem;
+  }
+
 }
 
 .description {
@@ -241,6 +268,11 @@ html {
     // 1rem = 12px, (12/16) * 100
     font-size: 2.6rem;
   }
+
+  @include respond(big-phone) {
+    // 1rem = 12px, (12/16) * 100
+    font-size: 2rem;
+  }
 }
 
 .art--profile-name,
@@ -269,7 +301,7 @@ html {
 
   @include respond(big-desktop) {
     // 1rem = 12px, (12/16) * 100
-    font-size: 2.2rem;
+    font-size: 3rem;
   }
 }
 
@@ -386,6 +418,8 @@ html {
   @include respond(tab-port) {
     // 1rem = 8px, (8/16) * 100
     font-size: 3rem;
+    line-height: 150%;
+    font-weight: 400;
 
   }
 
@@ -397,7 +431,9 @@ html {
 
   @include respond(big-phone) {
     // 1rem = 12px, (12/16) * 100
-    font-size: 2.4rem;
+    font-size: 3rem;
+    line-height: 150%;
+    font-weight: 400;
   }
 }
 
@@ -410,6 +446,33 @@ html {
   text-transform: capitalize;
   text-align: left;
   padding-bottom: 2.5rem;
+
+  @include respond(tab-land) {
+    // 1rem = 9px, (9/16) * 100
+    font-size: 2rem;
+    line-height: 150%;
+  }
+
+  @include respond(tab-port) {
+    // 1rem = 8px, (8/16) * 100
+    font-size: 1.8rem;
+    line-height: 150%;
+    font-weight: 400;
+    padding-bottom: 1rem;
+
+  }
+
+  @include respond(big-desktop) {
+
+    // 1rem = 12px, (12/16) * 100
+    font-size: 3rem;
+  }
+
+  @include respond(big-phone) {
+    // 1rem = 12px, (12/16) * 100
+    font-size: 2rem;
+
+  }
 }
 
 .small {

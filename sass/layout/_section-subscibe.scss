@@ -4,12 +4,20 @@
     border-radius: 2rem;
     display: flex;
 
+
     // align-items: center;
     padding: 8rem 6rem;
+
+    @include respond (big-phone) {
+      padding: 2rem 2rem;
+      flex-direction: column;
+    }
+
     &--img {
       width: 45.5rem;
 
       flex: 1;
+
       img {
         width: 100%;
       }
@@ -18,6 +26,11 @@
     &--text-box {
       padding-left: 8rem;
       flex: 1;
+
+      @include respond (big-phone) {
+        padding-left: 2rem;
+      }
+
       h3 {
         text-transform: capitalize;
       }

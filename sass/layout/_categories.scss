@@ -20,45 +20,55 @@
 
   &__card {
     background-color: $seconday-background-color;
-    overflow: hidden;
+
+    background-color: red;
     border-radius: 3rem;
+    // overflow: hidden;
 
-    // z-index: -2;
-    figure {
+    figure {}
 
-      // z-index: -1;
-      img {
-        width: 100%;
-        border-radius: 2rem 2rem 0 0;
-        display: block;
-        overflow: hidden;
-      }
-
-      position: relative;
-
-    }
   }
 
-  img:hover {
-    // background-color: #fff;
-    z-index: 3;
-    transform: scale(1.05);
-  }
 
-  figure:hover::after {
-    content: url("/assest/svg/PaintBrush.svg");
-    width: 10rem;
-    height: 10rem;
-    transition: all 1s ease;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    @include absCenter;
-    // bb: blur(1rem);
-    background-color: #ffffff4f;
-    // filter: blur(2px);
-    padding: 100vw;
-  }
+
+  // z-index: -2;
+  //   figure {
+
+  //     .overlay {
+  //       display: none;
+  //     }
+
+
+  //     img {
+  //       width: 100%;
+  //       border-radius: 2rem 2rem 0 0;
+  //       // display: block;
+  //       overflow: hidden;
+  //     }
+
+  //     position: relative;
+
+
+
+  //   }
+  // }
+
+  // // img:hover {
+  // //   z-index: 3;
+  // //   transform: scale(1.05);
+  // // }
+
+  // figure:hover {
+  //   .overlay {
+  //     display: block !important;
+  //   }
+
+  //   @include absCenter;
+  //   // bb: blur(1rem);
+  //   background-color: #ffffff4f;
+  //   // filter: blur(2px);
+  //   padding: 100vw;
+  // }
 
   .card-p {
     padding: 2rem 3rem;
