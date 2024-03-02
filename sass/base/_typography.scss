@@ -29,6 +29,7 @@ html {
     // 1rem = 9px, (9/16) * 100
     font-size: 7rem;
   }
+
   @include respond(tab-land) {
     // 1rem = 9px, (9/16) * 100
     font-size: 6rem;
@@ -49,6 +50,7 @@ html {
   font-size: 2.2rem;
   line-height: 175%;
   padding-bottom: 3rem;
+
   @include respond(tab-land) {
     // 1rem = 9px, (9/16) * 100
     font-size: 2rem;
@@ -64,11 +66,13 @@ html {
     // 1rem = 12px, (12/16) * 100
     font-size: 2.4rem;
   }
+
   @include respond(big-phone) {
     // 1rem = 9px, (9/16) * 100
     font-size: 3rem;
   }
 }
+
 .rating-description {
   font-size: 3rem;
 
@@ -92,6 +96,7 @@ html {
     font-size: 3.6rem;
   }
 }
+
 .info--text {
   font-size: 2.2rem;
   font-weight: 600;
@@ -112,21 +117,25 @@ html {
     // 1rem = 12px, (12/16) * 100
     font-size: 2.8rem;
   }
+
   @include respond(big-phone) {
     // 1rem = 12px, (12/16) * 100
     font-size: 2rem;
   }
 }
+
 .profile--name,
 .artist-name {
   font-size: 1.6rem;
   padding-left: 1.2rem;
   line-height: 175%;
+
   @include respond(big-phone) {
     font-size: 1.8rem;
     padding-left: 1.3rem;
     line-height: 175%;
   }
+
   @include respond(tab-land) {
     // 1rem = 9px, (9/16) * 100
     font-size: 1.4rem;
@@ -143,6 +152,7 @@ html {
     // 1rem = 12px, (12/16) * 100
     font-size: 2.4rem;
   }
+
   @include respond(big-phone) {
     // 1rem = 12px, (12/16) * 100
     font-size: 2.4rem;
@@ -174,11 +184,14 @@ html {
 .heading-tertiary {
   font-size: 5.1rem;
 }
+
 .description {
   font-size: 2.4rem;
   text-transform: capitalize;
   letter-spacing: 2px;
+  font-weight: lighter;
   padding: 1rem 0 6rem !important;
+
   @include respond(tab-land) {
     // 1rem = 9px, (9/16) * 100
     font-size: 2rem;
@@ -193,16 +206,20 @@ html {
     // 1rem = 12px, (12/16) * 100
     font-size: 3rem;
   }
+
   @include respond(big-phone) {
     // 1rem = 12px, (12/16) * 100
     font-size: 2rem;
   }
+
   @include respond(sm-phone) {
     // 1rem = 12px, (12/16) * 100
     padding: 1rem 0 2rem 0 !important;
   }
+
   // padding: 0 0 6rem;
 }
+
 .creator-name {
   font-size: 2rem;
   font-weight: 400;
@@ -261,6 +278,7 @@ html {
   font-weight: 400;
   line-height: 180%;
   text-transform: capitalize;
+
   @include respond(tab-land) {
     // 1rem = 9px, (9/16) * 100
     font-size: 1.6rem;
@@ -277,6 +295,7 @@ html {
     font-size: 2.8rem;
   }
 }
+
 .name {
   font-size: 2.4rem;
   font-weight: 300;
@@ -296,8 +315,10 @@ html {
     // 1rem = 12px, (12/16) * 100
     font-size: 3rem;
   }
+
   // padding-bottom: 1rem;
 }
+
 .fade {
   font-size: 1.6rem;
   line-height: 170%;
@@ -321,6 +342,7 @@ html {
     font-size: 2.2rem;
   }
 }
+
 .pri {
   font-size: 1.6rem;
   line-height: 170%;
@@ -343,6 +365,7 @@ html {
     // 1rem = 12px, (12/16) * 100
     font-size: 2.2rem;
   }
+
   @include respond(big-phone) {
     // 1rem = 12px, (12/16) * 100
     font-size: 2rem;
@@ -363,40 +386,38 @@ html {
   @include respond(tab-port) {
     // 1rem = 8px, (8/16) * 100
     font-size: 3rem;
-    
+
   }
 
   @include respond(big-desktop) {
-    
+
     // 1rem = 12px, (12/16) * 100
     font-size: 4.4rem;
   }
+
   @include respond(big-phone) {
     // 1rem = 12px, (12/16) * 100
     font-size: 2.4rem;
   }
 }
 
-.footer-head{
-font-family: $secondary-font;
-font-size: 2.2rem;
-font-weight: 700;
-line-height: 180%;
-letter-spacing: 0em;
-text-transform: capitalize;
-text-align: left;
-padding-bottom: 2.5rem;
+.footer-head {
+  font-family: $secondary-font;
+  font-size: 2.2rem;
+  font-weight: 700;
+  line-height: 180%;
+  letter-spacing: 0em;
+  text-transform: capitalize;
+  text-align: left;
+  padding-bottom: 2.5rem;
 }
 
-.small{
-font-family: $primary-fonts;
-font-size: 1.2rem;
-font-weight: 400;
-line-height: 70%;
-letter-spacing: 0em;
-text-align: left;
-color: $grey-color;
+.small {
+  font-family: $primary-fonts;
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 70%;
+  letter-spacing: 0em;
+  text-align: left;
+  color: $grey-color;
 }
-
-
-

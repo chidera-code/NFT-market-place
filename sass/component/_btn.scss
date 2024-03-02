@@ -9,12 +9,14 @@
   padding: 2rem 6rem;
   border-radius: 2rem;
 
-  transition: all 300ms ease;
+  transition: all 800ms ease;
   overflow: hidden;
+
   @include respond(tab-port) {
     border-radius: 1rem;
     padding: 1.5rem 3rem;
   }
+
   @include respond(big-phone) {
     border-radius: 1rem;
     padding: 1rem 2.4rem;
@@ -28,34 +30,38 @@
 .btn:hover,
 .btn:active {
   overflow: hidden;
-  // background-color: $color-primary;
-  transform: scale(1.1);
+  background-color: $color-primary;
+  // transform: scale(1.1);
   background-image: linear-gradient($gradient);
 
-  .btn-icon:hover {
-    color: $color-primary;
-  }
+  // .btn-icon:hover {
+  //   color: $color-primary;
+  // }
 }
 
 .trans-btn {
   justify-content: center;
   border: 2px solid #8b4cdc;
   background-color: transparent !important;
+
   @include respond(tab-port) {
     border-radius: 1rem;
     padding: 1.5rem 2rem;
   }
+
   @include respond(big-phone) {
     border-radius: 1rem;
     padding: 1rem 2.4rem;
   }
 }
+
 .btn-box {
   display: flex;
   align-items: center;
   justify-content: center;
   border: 2px solid #8b4cdc;
 }
+
 .btn--white {
   background-color: $color-primary !important;
   color: #000;

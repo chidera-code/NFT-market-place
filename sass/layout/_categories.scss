@@ -3,57 +3,69 @@
     padding-bottom: 6rem;
   }
 }
+
 .categories {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 3rem;
+
   @include respond(tab-port) {
     grid-template-columns: repeat(2, 1fr);
   }
+
   @include respond(big-phone) {
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 5rem;
   }
+
   &__card {
     background-color: $seconday-background-color;
     overflow: hidden;
-    border-radius: 6rem;
+    border-radius: 3rem;
+
     // z-index: -2;
     figure {
+
       // z-index: -1;
       img {
         width: 100%;
-        border-radius: 3rem 3rem 0 0;
+        border-radius: 2rem 2rem 0 0;
         display: block;
         overflow: hidden;
       }
 
       position: relative;
-      transition: all 500ms ease;
+
     }
   }
-  figure:hover {
+
+  img:hover {
     // background-color: #fff;
     z-index: 3;
     transform: scale(1.05);
   }
+
   figure:hover::after {
     content: url("/assest/svg/PaintBrush.svg");
     width: 10rem;
     height: 10rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    transition: all 1s ease;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     @include absCenter;
     // bb: blur(1rem);
     background-color: #ffffff4f;
     // filter: blur(2px);
     padding: 100vw;
   }
+
   .card-p {
     padding: 2rem 3rem;
+
     @include respond(big-phone) {
       padding: 4rem 5rem;
+
       p {
         font-size: 5rem;
       }
