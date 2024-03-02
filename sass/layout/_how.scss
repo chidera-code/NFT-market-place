@@ -35,6 +35,12 @@
       width: 21rem;
       border-radius: 50%;
       padding-bottom: 2rem;
+
+      @include respond (big-desktop){
+        height: 30rem;
+        width: 30rem;
+        // background-color: red;p
+      }
       img {
         width: 100%;
       }
