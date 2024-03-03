@@ -1,0 +1,27 @@
+.subscribe-form {
+  background-color: #fff;
+  display: flex;
+  border-radius: 2rem;
+
+  &:focus-within {
+    outline: 3px solid $accent-color;
+  }
+
+  input {
+    flex: 1.2;
+    border: none;
+    padding: 2rem;
+    border-radius: inherit;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  button {
+    background-color: #8a4cdc;
+    flex: 1;
+    border-radius: inherit;
+    border: none;
+  }
+}

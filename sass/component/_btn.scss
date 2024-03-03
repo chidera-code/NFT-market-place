@@ -2,15 +2,17 @@
 .btn:visited {
   padding-left: 1rem;
   background-color: $accent-color;
-
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 2rem 6rem;
   border-radius: 2rem;
-
-  transition: all 800ms ease;
+  transition: all 300ms ease;
   overflow: hidden;
+  white-space: nowrap;
+  background-image: linear-gradient($gradient);
+  background-position: 100%;
+  background-size: 400%;
 
   @include respond(tab-port) {
     border-radius: 1rem;
@@ -30,13 +32,7 @@
 .btn:hover,
 .btn:active {
   overflow: hidden;
-  background-color: $color-primary;
-  // transform: scale(1.1);
-  background-image: linear-gradient($gradient);
-
-  // .btn-icon:hover {
-  //   color: $color-primary;
-  // }
+  background-position: 5%;
 }
 
 .trans-btn {

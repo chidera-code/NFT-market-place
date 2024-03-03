@@ -7,10 +7,15 @@
 
     // align-items: center;
     padding: 8rem 6rem;
+    @include respond ( big-phone){
+      padding: 4rem 3.5rem;
+      // padding: 0;
+      // background-color: blue;
+    }
 
     @include respond (big-phone) {
-      padding: 2rem 2rem;
-      flex-direction: column;
+   display: grid;grid-template-columns: repeat(1, 1fr);
+
     }
 
     &--img {
@@ -21,6 +26,7 @@
       img {
         width: 100%;
       }
+
     }
 
     &--text-box {
@@ -28,7 +34,8 @@
       flex: 1;
 
       @include respond (big-phone) {
-        padding-left: 2rem;
+        margin-top: 2rem;
+        padding-left: 0 !important;
       }
 
       h3 {
